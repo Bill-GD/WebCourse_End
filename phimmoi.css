@@ -201,3 +201,19 @@ header div[class='container'] {
 .carousel-control-next {
   right: 14px;
 }
+
+footer {
+  background: url(assets/footer_bg.png);
+  padding: 15px;
+  text-align: center;
+  border-top: 3px solid #d9cd47;
+  margin-top: 50px;
+}
+.copyright,
+.copyright * {
+  text-wrap: wrap;
+  font-size: 14px;
+}
+.copyright p {
+  text-align: left;
+}
