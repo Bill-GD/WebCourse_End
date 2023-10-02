@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body > .container {
+  width: 1000px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+div {
+  display: block;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.movie-grid {
+  padding-right: 0px !important;
+  width: 680px;
+}
+
+.movie-list-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-list-1 a {
+  color: white;
+}
+
+.col-left {
+  width: 300px;
+  height: auto;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-left img {
+  width: 300px;
+  height: 150px;
+}
+
+.col-right {
+  float: left;
+  margin-left: 10px;
+  width: 360px;
+  padding: 0;
+}
+
+.list-tab-movie {
+  background-color: #181818;
+  width: 360px;
+  height: 600px;
+}
+
+.list-tab-movie > ul {
+  padding: 0px;
+}
+
+.tab-movie {
+  margin: 0;
+}
+
+.tab-movie li {
+  float: left;
+  padding: 10px;
+}
+
+.tab-content .movie {
+  padding: 6px 0px;
+  margin: 0px 10px 0px 10px;
+  font-size: 12px;
+  position: relative;
+  border-bottom: 1px dashed #555;
+}
+
+.tab-content > .movie::before {
+  content: '';
+  border-bottom: 1px dotted white;
+  position: absolute;
+}
+
+.movie img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #a8a8a8;
+  float: left;
+}
+
+.movie .content {
+  float: left;
+  padding-left: 10px;
+  width: 200px;
+}
+
+.name-en,
+.name-vn {
+  overflow: hidden;
+  display: block;
+  width: 200px;
+  text-wrap: nowrap;
+}
+
+.movie .time {
+  float: right;
+}
+
+.name-en,
+.time {
+  color: #666666;
+}
+
+/*film*/
+.line {
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to bottom, #000000, #acaaaa);
+}
+.movie-list-2-wrapper {
+  margin-left: 0px;
+  /* width: 95%; */
+}
+.movie-list-2,
+.line {
+  width: 94%;
+}
+.movie-list-2,
+.series-film,
+ul {
+  padding: 0;
+}
+.title h2 {
+  margin: 10px 0 5px 0;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: #dacb46;
+  float: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title span {
+  color: white;
+  margin-top: 20px;
+  float: right;
+}
+
+.series-movies {
+  width: 163px;
+  position: relative;
+  color: white;
+  background-color: #181818;
+  border: 2px solid #181818;
+}
+
+.series-movies img {
+  max-width: 100%;
+}
+
+.series-content {
+  padding: 5px;
+}
+
+.series-content .first-content {
+  color: #60c7fa;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.series-content .second-content {
+  font-size: 12px;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.series-content .flag {
+  max-width: 20px;
+}
+
+.series-movies .ribbon {
+  font-size: 11px;
+  padding: 2px;
+  position: absolute;
+  background-color: #a21d0a;
+  float: left;
+  left: 0px;
+  top: 5px;
+  color: white;
+  text-shadow: 1px 1px 2px #111;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+
+.series-film .movies {
+  float: left;
+  margin: 5px 6px 0 0;
+  height: 314px;
+}
+
+.series-film li:nth-child(4n) {
+  margin-right: 0;
+}
+.col-right img:hover,
+.series-film img:hover {
+  opacity: 0.5;
+}
+a:hover,
+.first-content:hover,
+.second-content:hover {
+  color: #dacb46;
+}

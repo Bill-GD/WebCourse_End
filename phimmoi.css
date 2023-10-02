@@ -20,7 +20,11 @@ body {
   background: url(assets/body_bg.gif);
 }
 div[class='container'] {
-  width: 1000px;
+  width: 1000px !important;
+  margin-bottom: 20px;
+}
+header div[class='container'] {
+  margin-bottom: 0px;
 }
 .top-header {
   background-image: url(./assets/header-bg.jpg);
@@ -132,22 +136,22 @@ div[class='container'] {
 .carousel {
   background-color: #1b1b1b;
 }
+.carousel.slide {
+  border-bottom: 1px solid #868489;
+}
 .carousel-item ul {
   margin: 0px;
-  padding: 17px 7px 17px 0px;
+  padding: 15px 0px;
 }
 .movie-carousel-item:hover .movie-carousel-item-title-vi {
   color: #dacb46;
 }
 .movie-carousel-item {
-  width: 225px;
+  /* width: 225px; */
   height: 300px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.movie-carousel-item img {
-  height: 100%;
 }
 .movie-carousel-item-banner {
   position: absolute;
@@ -170,15 +174,15 @@ div[class='container'] {
 }
 .movie-carousel-item-title-vi {
   color: #f07a3e;
-  font-size: 14px;
   font-weight: bold;
-  margin: 0px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 14px;
 }
 .movie-carousel-item-title-en {
   color: white;
   font-size: 12px;
+}
+.movie-carousel-item-title-vi,
+.movie-carousel-item-title-en {
   margin: 0px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -192,8 +196,8 @@ div[class='container'] {
   z-index: 2;
 }
 .carousel-control-prev {
-  left: 10px;
+  left: 14px;
 }
 .carousel-control-next {
-  right: 10px;
+  right: 14px;
 }
