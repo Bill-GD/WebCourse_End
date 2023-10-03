@@ -114,6 +114,7 @@ div {
   display: block;
   width: 200px;
   text-wrap: nowrap;
+  text-overflow: ellipsis;
 }
 
 .movie .time {
