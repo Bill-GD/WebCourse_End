@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'utm-cafeta';
-  src: url('assets/UTM\ Cafeta.ttf');
+  src: url('../assets/UTM\ Cafeta.ttf');
 }
 * {
   margin: 0px;
