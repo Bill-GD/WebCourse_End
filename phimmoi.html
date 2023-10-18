@@ -21,7 +21,9 @@
             <img src="assets/logo.png" />
           </a>
           <input type="text" name="search" id="search-box" placeholder="Tìm kiếm phim..." />
-          <input type="button" id="search-button" />
+          <button type="submit" id="search-button"></button>
+          <!-- <input type="submit" value="" /> -->
+          <!-- <input type="submit" /> -->
         </div>
       </div>
       <nav class="navbar-wrapper">
@@ -895,4 +897,9 @@
       </div>
     </footer>
   </body>
+  <script>
+    document.getElementById('search-button').addEventListener('click', () => {
+      location.href = `https://biphimmoi.top/search.php?s=${document.getElementById('search-box').value}`;
+    });
+  </script>
 </html>
